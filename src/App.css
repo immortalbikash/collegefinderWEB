@@ -9,7 +9,7 @@
 }
 
 .all{
-  background-color: wheat;
+  background-image: url(img.jpg);
   max-width: 100%;
 }
 
@@ -20,4 +20,9 @@
   margin: auto;
   height: 100%;
   background-color: orange;
+}
+
+.all-reg{
+  background-image: url(reg1.jpeg);
+  max-width: 100%;
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
 import { FacebookLoginButton,GoogleLoginButton } from 'react-social-login-buttons';
+import { Link } from 'react-router-dom';
 import '../App.css';
 
 const Login = (props) =>{
@@ -34,9 +35,9 @@ const Login = (props) =>{
             <GoogleLoginButton className="mt-3 mb-3"/>
 
             <div className="text-center">
-                <a href="/">Sign-up</a>
+                <Link to="/register">Sign-up</Link>
                 <span className="p-2">|</span>
-                <a href="/">Forgot password</a>
+                <Link to="/">Forgot password</Link>
 
             </div>
             

@@ -3,6 +3,7 @@ import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
 
 const Register = (prpos)=>{
     return(
+        <div className="all-reg">
         <Form className="register-form">
             <h1>Registration</h1>
 
@@ -39,6 +40,7 @@ const Register = (prpos)=>{
             <Button className="btn-lg btn-dark btn-block">Sign up</Button>
 
         </Form>
+        </div>
     );
 }
 
