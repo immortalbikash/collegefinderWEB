@@ -37,7 +37,7 @@ const Register = (prpos)=>{
                 <Input type="password" placeholder="Enter Password again"/>
             </FormGroup>
 
-            <Button className="btn-lg btn-dark btn-block">Sign up</Button>
+            <Button className="btn-lg btn-dark btn-block" href="/">Sign up</Button>
 
         </Form>
         </div>

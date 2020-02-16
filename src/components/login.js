@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+
+import { FacebookLoginButton,GoogleLoginButton } from 'react-social-login-buttons';
 import { Link, Redirect } from 'react-router-dom';
 
 import {
@@ -39,10 +41,11 @@ class Login extends Component {
         }
         return (
 
-            <Container>
+            <Container className="all">
             <h1>
                 <span className="font-weight-bold">collegefinder</span>.com/np
             </h1>
+
                 <Form>
                     <Col>
                         <FormGroup>
@@ -59,6 +62,10 @@ class Login extends Component {
                     <Button color="primary" onClick={this.submitForm} type="submit">Submit</Button>
                     <FormText>Not yet a user? <Link to='/register'> Sign Up here!</Link></FormText>
                 </Form>
+
+                <FacebookLoginButton className="mt-3 mb-3"/>
+                <GoogleLoginButton className="mt-3 mb-3"/>
+
             </Container>
         )
     }

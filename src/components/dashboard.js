@@ -13,6 +13,7 @@ import {
   DropdownItem,
   NavbarText
 } from 'reactstrap';
+
 import Slider from './Slider';
 import Cards from './cards';
 import '../App.css';
@@ -33,15 +34,15 @@ const Dashboard = (props) => {
               <NavLink href="/dashboard/">Home</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="https://github.com/reactstrap/reactstrap">Profile</NavLink>
+              <NavLink href="/profile">Profile</NavLink>
             </NavItem>
             <UncontrolledDropdown nav inNavbar>
               <DropdownToggle nav caret>
                 Others
               </DropdownToggle>
               <DropdownMenu right>
-                <DropdownItem>
-                  Option 1
+                <DropdownItem href="/about">
+                  About us
                 </DropdownItem>
                 <DropdownItem>
                   Option 2
@@ -57,6 +58,8 @@ const Dashboard = (props) => {
         </Collapse>
       </Navbar>
       <Slider/>
+
+      <div className="bck">
 
       <h5>
         College Finder Introduction: 
@@ -82,8 +85,11 @@ const Dashboard = (props) => {
        public or private schools, it’s more likely to be used inappropriately as a cost filter.
       </p>
 
-      <Cards/>
-    </div>
+      </div>
+
+      < Cards/>
+
+      </div>
   );
 }
 

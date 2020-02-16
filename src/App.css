@@ -9,7 +9,7 @@
 }
 
 .all{
-  background-image: url(img.jpg);
+  background-color: darkcyan;
   max-width: 100%;
 }
 
@@ -29,4 +29,16 @@
 .ktm{
   width: 150px;
   height: 400px;
+}
+
+.bck{
+  background-color: chocolate;
+}
+
+.profile{
+  background-color: darksalmon;
+}
+
+.about{
+  background-color: burlywood;
 }
